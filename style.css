@@ -6,26 +6,28 @@
   font-family: system-ui, Arial, sans-serif;
 }
 
-/* PAGE BACKGROUND (VISIBLE BUT SUBTLE PATTERN) */
 body {
   color: #1f2937;
   line-height: 1.6;
 
-  background-color: #f6f5f2;
+  background-color: #f6f7f4;
 
-  /* soft grid pattern (actually visible now, but still light) */
+  /* diagonal subtle stripe pattern */
   background-image:
-    linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
-
-  background-size: 40px 40px;
+    repeating-linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.03) 0px,
+      rgba(0, 0, 0, 0.03) 1px,
+      transparent 1px,
+      transparent 12px
+    );
 }
 
-/* HERO */
+/* HERO (green tone restored but soft) */
 .hero {
   height: 50vh;
   background:
-    linear-gradient(to right, rgba(0,0,0,0.55), rgba(0,0,0,0.15)),
+    linear-gradient(to right, rgba(15, 90, 70, 0.75), rgba(0,0,0,0.2)),
     url("front.jpg");
 
   background-size: cover;
@@ -47,7 +49,7 @@ body {
   margin-bottom: 15px;
 }
 
-/* BUTTON (soft yellow accent) */
+/* BUTTON (yellow accent) */
 .btn {
   display: inline-block;
   padding: 14px 26px;
@@ -64,12 +66,12 @@ body {
   transform: translateY(-2px);
 }
 
-/* NAV */
+/* NAV (deep green/charcoal blend) */
 nav {
   display: flex;
   justify-content: center;
   gap: 30px;
-  background: #1f2933;
+  background: #1f3a34;
   padding: 14px;
   position: sticky;
   top: 0;
@@ -83,10 +85,10 @@ nav a {
 }
 
 nav a:hover {
-  color: white;
+  color: #ffffff;
 }
 
-/* PROPERTY WRAPPER */
+/* WRAPPER */
 .property-overview {
   max-width: 1100px;
   margin: auto;
@@ -119,6 +121,7 @@ nav a:hover {
 .stat strong {
   font-size: 1.4rem;
   display: block;
+  color: #0f766e;
 }
 
 .stat span {
@@ -149,7 +152,7 @@ nav a:hover {
 }
 
 .highlights div {
-  background: #faf7ef;
+  background: #f6f3ea;
   padding: 14px;
   border-radius: 10px;
   border-left: 3px solid #f4c95d;
@@ -194,7 +197,7 @@ footer {
   text-align: center;
   padding: 30px;
   margin-top: 60px;
-  background: #1f2933;
+  background: #1f3a34;
   color: #9ca3af;
 }
 
