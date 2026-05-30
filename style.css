@@ -12,9 +12,8 @@ body {
   line-height: 1.6;
 }
 
-/* HERO */
 .hero {
-  height: 75vh;
+  height: 50vh; /* was 75vh — this is the key fix */
   background:
     linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.7)),
     url("front.jpg");
@@ -26,21 +25,6 @@ body {
   text-align: center;
   color: white;
   padding: 20px;
-}
-
-.hero-content {
-  max-width: 750px;
-}
-
-.hero h1 {
-  font-size: 3.2rem;
-  font-weight: 700;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  opacity: 0.9;
-  margin: 10px 0 20px;
 }
 
 /* BUTTON */
