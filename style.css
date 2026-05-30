@@ -10,7 +10,7 @@
 .hero {
   height: 70vh;
   background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-              url("images/house.jpg");
+              url("Old house photo.png");
   background-size: cover;
   background-position: center;
   display: flex;
