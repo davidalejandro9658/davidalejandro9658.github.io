@@ -12,17 +12,19 @@ body {
   line-height: 1.6;
 }
 
-/* HERO (FIXED — modern listing style) */
+/* HERO */
 .hero {
   height: 50vh;
   background:
-    linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.2)),
+    linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.25)),
     url("front.jpg");
   background-size: cover;
   background-position: center;
+
   display: flex;
   align-items: flex-end;
   padding: 50px;
+
   color: white;
 }
 
@@ -86,16 +88,20 @@ nav a:hover {
 .property-overview {
   max-width: 1100px;
   margin: auto;
-  padding: 0 20px;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
 }
 
-/* STATS BAR */
+/* STATS BAR (FIXED — NO OVERLAP BUG) */
 .stats-bar {
-  margin-top: -40px;
+  margin-top: 20px;   /* ❗ FIX: removed negative margin */
   background: white;
   border-radius: 16px;
+
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+
   box-shadow: 0 10px 30px rgba(0,0,0,0.12);
   overflow: hidden;
 }
@@ -158,6 +164,7 @@ nav a:hover {
   max-width: 1100px;
   margin: 50px auto;
   padding: 0 20px;
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 16px;
