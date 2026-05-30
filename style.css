@@ -12,19 +12,35 @@ body {
   line-height: 1.6;
 }
 
+/* HERO (FIXED — modern listing style) */
 .hero {
-  height: 50vh; /* was 75vh — this is the key fix */
+  height: 50vh;
   background:
-    linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.7)),
+    linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.2)),
     url("front.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  align-items: flex-end;
+  padding: 50px;
   color: white;
-  padding: 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 15px;
 }
 
 /* BUTTON */
@@ -73,7 +89,7 @@ nav a:hover {
   padding: 0 20px;
 }
 
-/* STATS BAR (NOW LOOKS LIKE A FLOATING PANEL) */
+/* STATS BAR */
 .stats-bar {
   margin-top: -40px;
   background: white;
@@ -104,7 +120,7 @@ nav a:hover {
   color: #6b7280;
 }
 
-/* CARDS (NOW MORE MODERN + SOFTER) */
+/* CARDS */
 .card {
   background: white;
   margin: 25px auto;
@@ -116,6 +132,10 @@ nav a:hover {
 
 .card:hover {
   transform: translateY(-3px);
+}
+
+.card h2 {
+  margin-bottom: 10px;
 }
 
 /* HIGHLIGHTS */
@@ -181,8 +201,12 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .hero {
+    padding: 30px;
+  }
+
   .hero h1 {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
 }
 
