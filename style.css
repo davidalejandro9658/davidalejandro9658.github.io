@@ -202,54 +202,72 @@ nav a.active {
   width: 100%;
 }
 
-/* APPLICATION LINK CARDS */
+/* APPLICATION LINKS */
+
 .link-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
 
-  background: #ffffff;
-  border: 2px solid #e5e7eb;
+  margin-top: 16px;
+  padding: 18px 22px;
+
+  background: #eef7f5;
+  border: 2px solid #0f766e;
+
   border-radius: 14px;
 
-  padding: 18px 22px;
-  margin-top: 16px;
+  text-decoration: none !important;
 
-  text-decoration: none;
-  color: #1f2937;
-
-  transition: all 0.25s ease;
+  transition: all .25s ease;
 }
 
 .link-card:hover {
+  background: #0f766e;
   border-color: #0f766e;
-  background: #f6f7f4;
-  transform: translateY(-3px);
-  box-shadow: 0 12px 25px rgba(15, 118, 110, 0.12);
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 12px 24px rgba(15,118,110,.25);
 }
 
 .link-card-title {
+  color: #0f766e;
   font-size: 1.05rem;
   font-weight: 800;
-  color: #1f3a34;
-  margin-bottom: 4px;
+
+  transition: color .25s ease;
 }
 
 .link-card-subtitle {
-  font-size: 0.92rem;
-  color: #6b7280;
+  color: #4b5563;
+  font-size: .92rem;
+
+  transition: color .25s ease;
 }
 
 .link-arrow {
-  font-size: 1.6rem;
-  font-weight: 800;
   color: #f4c95d;
-  transition: transform 0.25s ease;
+  font-size: 1.8rem;
+  font-weight: 800;
+
+  transition: all .25s ease;
+}
+
+/* HOVER EFFECTS */
+
+.link-card:hover .link-card-title {
+  color: white;
+}
+
+.link-card:hover .link-card-subtitle {
+  color: rgba(255,255,255,.85);
 }
 
 .link-card:hover .link-arrow {
-  transform: translateX(5px);
+  transform: translateX(8px);
+  color: #f4c95d;
 }
 
 /* HIGHLIGHTS */
