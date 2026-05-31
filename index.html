@@ -122,5 +122,34 @@
     <p>© 2026 Guerra Rentals • All rights reserved</p>
   </footer>
 
+<div class="lightbox" id="lightbox">
+  <img id="lightbox-image" src="" alt="">
+</div>  
+
+ <script>
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightbox-image");
+
+document.querySelectorAll(".photo-card img").forEach(img => {
+
+  img.addEventListener("click", () => {
+
+    lightboxImage.src = img.src;
+
+    lightbox.classList.add("active");
+
+  });
+
+});
+
+lightbox.addEventListener("click", () => {
+
+  lightbox.classList.remove("active");
+
+});
+
+</script> 
+  
 </body>
 </html>
