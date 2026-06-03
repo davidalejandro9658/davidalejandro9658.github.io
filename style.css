@@ -383,3 +383,64 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 16px;
 }
+
+/* LINK CARDS (SOLID GREEN → INVERT ON HOVER) */
+.link-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  background: #0f766e;   /* solid green */
+  color: white;
+  border-radius: 14px;
+  padding: 18px 22px;
+  margin-top: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: all 0.25s ease;
+  border: 2px solid #0f766e; /* needed for invert effect */
+}
+
+/* TEXT */
+.link-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 4px;
+  transition: 0.25s;
+}
+
+.link-card-subtitle {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.85);
+  transition: 0.25s;
+}
+
+/* ARROW */
+.link-arrow {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  transition: 0.25s ease;
+}
+
+/* Link Buttons */
+.link-card:hover {
+  background: white;
+  color: #0f766e;
+  transform: translateY(-3px);
+}
+
+/* TEXT INVERT */
+.link-card:hover .link-card-title {
+  color: #0f766e;
+}
+
+.link-card:hover .link-card-subtitle {
+  color: #4b5563;
+}
+
+/* ARROW MOVE + COLOR CHANGE */
+.link-card:hover .link-arrow {
+  transform: translateX(6px);
+  color: #0f766e;
+}
