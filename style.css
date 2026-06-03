@@ -361,3 +361,25 @@ footer {
     right: 10px;
   }
 }
+
+/* FIXED GROUPED GALLERY */
+
+.gallery {
+  display: block; /* overrides your old grid */
+}
+
+.gallery-title {
+  width: 100%;
+  margin: 35px 0 10px;
+  padding: 0 20px;
+  font-size: 1.6rem;
+  color: #1f3a34;
+}
+
+.gallery-group {
+  padding: 0 20px;
+  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
