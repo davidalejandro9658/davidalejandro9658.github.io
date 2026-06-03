@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photos | 5254 Arryne Dr S</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Full Property Gallery</h1>
+      <p>Explore every room in detail</p>
+      <a href="#featured" class="btn">Start Exploring</a>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#gallery">Photos</a>
+    <a href="apply.html">Apply</a>
+  </nav>
+
+  <section class="property-overview">
+
+    <!-- ✅ FEATURED VIEWER -->
+    <div class="card" id="featured">
+      <h2>Featured View</h2>
+
+      <img id="mainImage" src="photo1.jpg" style="width:100%; border-radius:12px; margin-bottom:15px;">
+
+      <div class="gallery">
+        <img src="photo1.jpg" onclick="setMain(this.src)">
+        <img src="photo2.jpg" onclick="setMain(this.src)">
+        <img src="photo3.jpg" onclick="setMain(this.src)">
+        <img src="photo4.jpg" onclick="setMain(this.src)">
+      </div>
+    </div>
+
+    <!-- ✅ EXTERIOR -->
+    <div class="card">
+      <h2>Exterior</h2>
+
+      <div class="gallery">
+        <div class="photo-card">
+          <img src="ext1.jpg" onclick="openModal(this.src)">
+          <p>Front View</p>
+        </div>
+
+        <div class="photo-card">
+          <img src="ext2.jpg" onclick="openModal(this.src)">
+          <p>Backyard</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ✅ LIVING AREAS -->
+    <div class="card">
+      <h2>Living Areas</h2>
+
+      <div class="gallery">
+        <div class="photo-card">
+          <img src="living1.jpg" onclick="openModal(this.src)">
+          <p>Living Room</p>
+        </div>
+
+        <div class="photo-card">
+          <img src="living2.jpg" onclick="openModal(this.src)">
+          <p>Open Floor Plan</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ✅ KITCHEN -->
+    <div class="card">
+      <h2>Kitchen</h2>
+
+      <div class="gallery">
+        <div class="photo-card">
+          <img src="kitchen1.jpg" onclick="openModal(this.src)">
+          <p>Modern Kitchen</p>
+        </div>
+
+        <div class="photo-card">
+          <img src="kitchen2.jpg" onclick="openModal(this.src)">
+          <p>Counter Space</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ✅ BEDROOMS -->
+    <div class="card">
+      <h2>Bedrooms</h2>
+
+      <div class="gallery">
+        <div class="photo-card">
+          <img src="bed1.jpg" onclick="openModal(this.src)">
+          <p>Primary Bedroom</p>
+        </div>
+
+        <div class="photo-card">
+          <img src="bed2.jpg" onclick="openModal(this.src)">
+          <p>Guest Bedroom</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ✅ BATHROOMS -->
+    <div class="card">
+      <h2>Bathrooms</h2>
+
+      <div class="gallery">
+        <div class="photo-card">
+          <img src="bath1.jpg" onclick="openModal(this.src)">
+          <p>Main Bathroom</p>
+        </div>
+
+        <div class="photo-card">
+          <img src="bath2.jpg" onclick="openModal(this.src)">
+          <p>Shower</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ✅ IMAGE MODAL -->
+  <div class="image-modal" id="modal" onclick="closeModal()">
+    <div class="image-modal-content">
+      <button class="image-modal-close" onclick="closeModal()">×</button>
+      <img id="modalImg">
+    </div>
+  </div>
+
