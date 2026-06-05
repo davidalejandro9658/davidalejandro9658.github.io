@@ -444,3 +444,103 @@ footer {
   transform: translateX(6px);
   color: #0f766e;
 }
+
+
+
+/* Make cards look more premium */
+.card {
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle accent bar like Zillow */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #f4c95d, #e7b94c);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.08);
+}
+
+/* Section titles */
+.card h2 {
+  font-size: 1.55rem;
+  margin-bottom: 14px;
+  color: #1f3a34;
+}
+
+/* Paragraph text */
+.card p {
+  line-height: 1.75;
+  color: #374151;
+}
+
+/* Lists look cleaner */
+.card ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+/* Highlight cards (requirements) */
+.highlights div {
+  background: #f9f7ef;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.highlights div:hover {
+  background: #f4efe0;
+  transform: translateX(4px);
+}
+
+/* Improve section spacing */
+.property-overview {
+  padding-bottom: 50px;
+}
+
+/* Add breathing room between sections */
+.property-overview .card + .card {
+  margin-top: 30px;
+}
+
+/* Optional: soften page feel */
+body {
+  letter-spacing: 0.2px;
+}
+
+/* Slightly improve footer spacing */
+footer {
+  margin-top: 80px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 14px 26px;
+  background: #f4c95d;
+  color: #1f2937;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+
+.btn:hover {
+  background: #e7b94c;
+  transform: translateY(-2px);
+}
+
